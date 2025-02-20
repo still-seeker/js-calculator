@@ -1,0 +1,67 @@
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    border: 10px solid white;
+    width: 500px;
+    height: 500px;
+    flex-direction: column;
+}
+
+.screen{
+    width: 500px;
+    height: 150px;
+    border: 1px solid snow;
+}
+
+.row {
+    display: flex;
+}
+
+.clear, .Del, .divide{
+    border: 1px solid white;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 800;
+}
+
+
+.upperRow, .middleRow, .lowerRow{
+    display: flex;
+    width: 500px;
+    border: 1px solid white;
+    height: 80px;
+}
+
+.multiply, .add, .sub, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+    width: 110px;
+    border: 1px solid wheat;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.zeroRow{
+    display: flex;
+    width: 500px;
+    height: 65px;
+    
+}
+
+.zero, .dot, .equals{
+    border: 4px solid wheat;
+    padding: 10px;
+    width: 160px;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+
+
