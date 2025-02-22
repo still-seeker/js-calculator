@@ -29,3 +29,13 @@ function operate(num1, num2, operator){
             return divide(num1, num2);
     }
 }
+
+const display = document.querySelector(".screen");
+
+function appendToScreen(input){
+    display.value += input;
+}
+
+function clear() {
+    display.value = "";
+}
