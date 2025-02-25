@@ -88,6 +88,9 @@
     color: silver;
     background-color: hsl(0, 0%, 15%);
 }
+.equals{
+    color: white;
+}
 
 .equals{
     background-color: hsl(115, 92%, 26%);
