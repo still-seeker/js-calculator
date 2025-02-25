@@ -12,29 +12,30 @@
         <div class="row">
             <button class="clear" onclick="clearCalc()">AC</button>
             <button class="Del" onclick="del()">DEL</button>
-            <button class="divide operator-btn" onclick="appendToScreen('/')">/</button> 
+            <button class="percent" onclick="divideBy100()">%</button>
+            <button class="divide operator-btn">/</button> 
         </div>
         <div class="numbers">
             <div class="upperRow">
-                <button class="seven" onclick="appendToScreen('7')">7</button>
-                <button class="eight" onclick="appendToScreen('8')">8</button>
-                <button class="nine" onclick="appendToScreen('9')">9</button>
-                <button class="multiply operator-btn" onclick="appendToScreen('*')">*</button>
+                <button class="digit" onclick="appendToScreen('7')">7</button>
+                <button class="digit" onclick="appendToScreen('8')">8</button>
+                <button class="digit" onclick="appendToScreen('9')">9</button>
+                <button class="multiply operator-btn">*</button>
             </div>
             <div class="middleRow">
-                <button class="four" onclick="appendToScreen('4')">4</button>
-                <button class="five" onclick="appendToScreen('5')">5</button>
-                <button class="six" onclick="appendToScreen('6')">6</button>
-                <button class="sub operator-btn" onclick="appendToScreen('-')">-</button>
+                <button class="digit" onclick="appendToScreen('4')">4</button>
+                <button class="digit" onclick="appendToScreen('5')">5</button>
+                <button class="digit" onclick="appendToScreen('6')">6</button>
+                <button class="sub operator-btn">-</button>
             </div>
             <div class="lowerRow">
-                <button class="one" onclick="appendToScreen('1')">1</button>
-                <button class="two" onclick="appendToScreen('2')">2</button>
-                <button class="three" onclick="appendToScreen('3')">3</button>
-                <button class="add operator-btn" onclick="appendToScreen('+')">+</button>
+                <button class="digit" onclick="appendToScreen('1')">1</button>
+                <button class="digit" onclick="appendToScreen('2')">2</button>
+                <button class="digit" onclick="appendToScreen('3')">3</button>
+                <button class="add operator-btn">+</button>
             </div>
             <div class="zeroRow">
-                <button class="zero" onclick="appendToScreen('0')">0</button>
+                <button class="digit zero" onclick="appendToScreen('0')">0</button>
                 <button class="dot" onclick="appendToScreen('.')">.</button>
                 <button class="equals operator-btn">=</button>
             </div>

@@ -27,7 +27,7 @@
     display: flex;
 }
 
-.clear, .Del, .divide{
+.clear, .Del, .divide, .percent{
     border: none;
     border-radius: 4px;
     margin: 8px;
@@ -47,7 +47,7 @@
     height: 80px;
 }
 
-.multiply, .add, .sub, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine{
+.multiply, .add, .sub, .digit{
     width: 110px;
     border: none;
     font-size: 3rem;

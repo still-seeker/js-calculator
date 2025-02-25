@@ -1,43 +1,45 @@
-
-
 /**The basic arithmetic calculation functions */
 function add(a, b) {
-    return a + b;
+    return parseFloat(a) + parseFloat(b);
 }
 function subtract(a, b) {
-    return a - b;
+    return parseFloat(a) - parseFloat(b);
 }
 function multiply(a, b) {
-    return a * b;
+    return parseFloat(a) * parseFloat(b);
 }
 function divide(a, b) {
-    return a / b;
+    return parseFloat(a) / parseFloat(b);
 }
 
-
-const equals = document.querySelector(".equals");
-//equals.addEventListener("click", operate);
-const operate = function(num1, num2, operator){
+/**operate function carries out the computation */
+const operate = function(leftNum, rightNum, operator){
     let output;
     switch(operator) {
         case "+":
-            output = add(num1, num2);
+            output = add(leftNum, rightNum);
         case "-":
-            output = subtract(num1, num2);
+            output = subtract(leftNum, rightNum);
         case "*":
-            output = multiply(num1, num2);
+            output = multiply(leftNum, rightNum);
         case "/":
-            if (num2 === 0) {
+            if (rightNum === 0) {
                 output = "Error"
             }
-            output = divide(num1, num2);
+            output = divide(leftNum, rightNum);
     }
 }
+
+//initializing the variables
+let initialDisplay = "";
+let leftNum = '';
+let rightNum = '';
+let operator = '';
+
 
 /**Selecting the display and setting the default value to 0*/
 const display = document.querySelector(".screen");
 display.value = '0';
-let initialDisplay = "";
 
 function appendToScreen(input){
     initialDisplay += input;
@@ -48,11 +50,16 @@ function appendToScreen(input){
 function clearCalc() {
     display.value = '0';
     initialDisplay = '';
-
 }
 
+//deletes the last entered value from the screen
 function del(){
     display.value = display.value.substring(0, display.value.length - 1);
+    initialDisplay = display.value; 
+}
+
+//divides input by 100
+function divideBy100() {
+    display.value = parseFloat(display.value / 100);
     initialDisplay = display.value;
-    
 }
