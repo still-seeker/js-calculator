@@ -1,41 +1,58 @@
+
+
+/**The basic arithmetic calculation functions */
 function add(a, b) {
     return a + b;
 }
-
 function subtract(a, b) {
     return a - b;
 }
-
 function multiply(a, b) {
     return a * b;
 }
-
 function divide(a, b) {
     return a / b;
 }
 
-let operator = "";
-let num1, num2;
 
-function operate(num1, num2, operator){
+const equals = document.querySelector(".equals");
+//equals.addEventListener("click", operate);
+const operate = function(num1, num2, operator){
+    let output;
     switch(operator) {
         case "+":
-            return add(num1, num2);
+            output = add(num1, num2);
         case "-":
-            return subtract(num1, num2);
+            output = subtract(num1, num2);
         case "*":
-            return multiply(num1, num2);
+            output = multiply(num1, num2);
         case "/":
-            return divide(num1, num2);
+            if (num2 === 0) {
+                output = "Error"
+            }
+            output = divide(num1, num2);
     }
 }
 
+/**Selecting the display and setting the default value to 0*/
 const display = document.querySelector(".screen");
+display.value = '0';
+let initialDisplay = "";
 
 function appendToScreen(input){
-    display.value += input;
+    initialDisplay += input;
+    display.value = initialDisplay;  
 }
 
-function clear() {
-    display.value = "";
+//Restores the input value to default
+function clearCalc() {
+    display.value = '0';
+    initialDisplay = '';
+
+}
+
+function del(){
+    display.value = display.value.substring(0, display.value.length - 1);
+    initialDisplay = display.value;
+    
 }

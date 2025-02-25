@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="container">
-        <input class="screen" readonly>
+        <input type="text" class="screen" readonly>
         <div class="row">
-            <button class="clear" onclick="clear()">CLEAR</button>
+            <button class="clear" onclick="clearCalc()">AC</button>
             <button class="Del" onclick="del()">DEL</button>
             <button class="divide operator-btn" onclick="appendToScreen('/')">/</button> 
         </div>
@@ -36,7 +36,7 @@
             <div class="zeroRow">
                 <button class="zero" onclick="appendToScreen('0')">0</button>
                 <button class="dot" onclick="appendToScreen('.')">.</button>
-                <button class="equals operator-btn" onclick="operate()">=</button>
+                <button class="equals operator-btn">=</button>
             </div>
         </div>
     </div>
