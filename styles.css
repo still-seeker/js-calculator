@@ -1,8 +1,15 @@
  body{
     display: flex;
+    flex-direction: column;
+    gap: 40px;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.heading{
+    font-weight: 900;
+    color: slateblue;
 }
 
 .container{

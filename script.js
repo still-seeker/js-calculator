@@ -21,7 +21,7 @@ waitingForSecondOperand = false;
 
 /**operate function carries out the computation */
 function operate(){
-    if (leftNum === null || operate === null || initialDisplay === ''){
+    if (leftNum === null || operator === '' || initialDisplay === ''){
         return;
     }
     let rightNum = parseFloat(initialDisplay);
