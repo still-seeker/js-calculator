@@ -60,7 +60,7 @@
 .multiply, .add, .sub, .digit{
     width: 110px;
     border: none;
-    font-size: 3rem;
+    font-size: 2rem;
     color: silver;
     background-color: hsl(0, 0%, 15%);
     border-radius: 4px;
@@ -84,7 +84,7 @@
     padding-bottom: 10px;
     width: 160px;
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2rem;
     color: silver;
     background-color: hsl(0, 0%, 15%);
 }
