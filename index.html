@@ -8,36 +8,36 @@
 </head>
 <body>
     <div class="container">
-        <input type="text" class="screen" readonly>
+        <input type="text" id="screen" readonly>
         <div class="row">
             <button class="clear" onclick="clearCalc()">AC</button>
             <button class="Del" onclick="del()">DEL</button>
             <button class="percent" onclick="divideBy100()">%</button>
-            <button class="divide operator-btn">/</button> 
+            <button class="divide operator-btn" onclick="setOperation('/')">/</button> 
         </div>
         <div class="numbers">
             <div class="upperRow">
                 <button class="digit" onclick="appendToScreen('7')">7</button>
                 <button class="digit" onclick="appendToScreen('8')">8</button>
                 <button class="digit" onclick="appendToScreen('9')">9</button>
-                <button class="multiply operator-btn">*</button>
+                <button class="multiply operator-btn" onclick="setOperation('x')">x</button>
             </div>
             <div class="middleRow">
                 <button class="digit" onclick="appendToScreen('4')">4</button>
                 <button class="digit" onclick="appendToScreen('5')">5</button>
                 <button class="digit" onclick="appendToScreen('6')">6</button>
-                <button class="sub operator-btn">-</button>
+                <button class="sub operator-btn" onclick="setOperation('-')">-</button>
             </div>
             <div class="lowerRow">
                 <button class="digit" onclick="appendToScreen('1')">1</button>
                 <button class="digit" onclick="appendToScreen('2')">2</button>
                 <button class="digit" onclick="appendToScreen('3')">3</button>
-                <button class="add operator-btn">+</button>
+                <button class="add operator-btn" onclick="setOperation('+')">+</button>
             </div>
             <div class="zeroRow">
                 <button class="digit zero" onclick="appendToScreen('0')">0</button>
-                <button class="dot" onclick="appendToScreen('.')">.</button>
-                <button class="equals operator-btn">=</button>
+                <button class="dot" onclick="decimalPoint()">.</button>
+                <button class="equals" onclick="operate()">=</button>
             </div>
         </div>
     </div>

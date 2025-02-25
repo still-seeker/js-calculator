@@ -15,7 +15,7 @@
     overflow: hidden;
 }
 
-.screen{
+#screen{
     width: 500px;
     height: 150px;
     border: 1px solid snow;
@@ -75,6 +75,18 @@
     font-weight: 700;
     font-size: 3rem;
     background-color: hsl(0, 0%, 15%);
+}
+
+.equals{
+    background-color: hsl(115, 92%, 26%);
+}
+
+.equals:hover {
+    background-color: hsl(115, 81%, 40%);
+}
+
+.equals:active {
+    background-color: hsl(115, 81%, 50%);
 }
 
 .operator-btn{
